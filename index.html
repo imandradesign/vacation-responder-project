@@ -23,8 +23,8 @@
       <div class="vacation-form">
         <form>
           <div class="form-group">
-            <label for="first-name">First Name</label>
-            <input id="first-name" class="form-control" type="text">
+            <label for="name">First name</label>
+            <input id="name" class="form-control" type="text" required>
           </div>
           <div class="form-group">
             <label for="street-address">Street address</label>
@@ -51,10 +51,10 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="form-group">
                 <label for="season">Which season do you prefer?</label>
-                <select class="form-control" id="season">
+                <select class="form-control" id="season" required>
                   <option value="1">Spring</option>
                   <option value="2">Summer</option>
                   <option value="3">Autumn</option>
@@ -62,15 +62,101 @@
                 </select>
               </div>
             </div>
-            <div class="col-md-9">
+          </div>
+          <div class="row">
+            <div class="col-md-4">
               <div class="form-group">
                 <label for="color">What is your favorite color?</label>
-                <input type="color" class="form-control" id="color">
+                <input type="color" class="form-control" id="color" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="drink">Choose your preferred beverage</label>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="drink" value="mojito" checked>
+                    Mojito
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="drink" value="hotcocoa">
+                    Hot Cocoa
+                  </label>
+                </div>
+                <div class="radio">
+                  <label>
+                    <input type="radio" name="drink" value="mineralwater">
+                    Mineral Water
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="consent">I consent to having my information stored privately</label>
+                <input type="checkbox" class="form-control" id="consent" value="yes" required>
+              </div>
+              <div class="form-group">
+                <legend>Choose your interests</legend>
+                  <div>
+                    <input type="checkbox" id="hiking" name="interest" value="hiking">
+                    <label for="hiking">Hiking</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="sandcastles" name="interest" value="sandcastles">
+                    <label for="sandcastles">Building sand castles</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="reading" name="interest" value="reading">
+                    <label for="reading">Reading</label>
+                  </div>
               </div>
             </div>
           </div>
           <button type="submit" class="btn btn-warning">Submit</button>
         </form>
+
+        <div class="rome">
+          <h3><span class="name"></span>, you should book a trip to Rome!</h3>
+          <img src="img/rome.jpg" alt="Roman colosseum building in front of a sunset" id="rome-img">
+          <h5><span class="click-rome">Click here to learn more about Rome!</span></h5>
+          <div class="rome-facts">
+            <p>Fun facts about Rome and why it's your best vacation destination:</p>
+            <ul>
+              <li>Thing 1</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hawaii">
+          <h3><span class="name"></span>, you should book a trip to Hawaii!</h3>
+          <img src="img/hawaii.png" alt="Double rainbow over the ocean on a Hawaiian beach" id="hawaii-img">
+          <h5><span class="click-hawaii">Click here to learn more about Hawaii!</span></h5>
+          <div class="hawaii-facts">
+            <p>Fun facts about Hawaii and why it's your best vacation destination:</p>
+            <ul>
+              <li>Thing 1</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="greenland">
+          <h3><span class="name"></span>, you should book a trip to Greenland!</h3>
+          <img src="img/greenland.jpg" alt="Hiker standing on a peak overlooking water and icy mountains" id="greenland-img">
+          <h5><span class="click-greenland">Click here to learn more about Greenland!</span></h5>
+          <div class="greenland-facts">
+            <p>Fun facts about Greenland and why it's your best vacation destination:</p>
+            <ul>
+              <li>Thing 1</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
