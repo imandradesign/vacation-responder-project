@@ -1,9 +1,25 @@
+.jumbotron {
+  background-color: #8ac7c4;
+}
+
+body {
+  background-color: #c3e2e1;
+}
+
+label {
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+}
+
 #page-title {
   margin-top: 10%;
   margin-left: 20px;
 }
 
-#beach-img {
+#sun-img {
   float: right;
   max-width: 300px;
 }
@@ -12,29 +28,61 @@
   padding-bottom: 20px;
 }
 
-.hawaii, .rome, .greenland {
+.form-control {
+  background-color: #E2FEF9;
+}
+
+.hawaii, .rome, .qaqortoq {
   text-align: center;
 }
 
 ul {
   text-align: left !important;
-  padding-left: 25%;
 }
 
 #rome-img, #hawaii-img, #greenland-img {
-  display:block;
-  margin-left:auto;
-  margin-right:auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-//.rome, .hawaii, .greenland {
+.rome, .hawaii, .qaqortoq {
   display: none;
 }
 
-.rome-facts, .hawaii-facts, .greenland-facts {
+.rome-facts, .hawaii-facts, .qaqortoq-facts {
   display: none;
 }
 
 #otherinput {
   display: none;
+}
+
+#reload {
+  display: block;
+  margin: 0 auto;
+  background-color: #8ac7c4;
+  color: black;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 100px;
+}
+
+#submit {
+  background-color: #EA7434;
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+
+.vacation-form {
+  margin-left: 25%;
+  max-width: 500px;
+}
+
+.qaqortoq h5, .hawaii h5, .rome h5 {
+  margin-bottom: 50px;
+}
+
+.qaqortoq-facts, .hawaii-facts, .rome-facts {
+  margin-bottom: 100px;
 }
