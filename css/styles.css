@@ -32,26 +32,24 @@ p {
   background-color: #E2FEF9;
 }
 
-.hawaii, .rome, .qaqortoq {
+.kyoto, .rome, .qaqortoq, .puerto-escondido, .singapore {
   text-align: center;
+  display: none;
 }
 
 ul {
   text-align: left !important;
 }
 
-#rome-img, #hawaii-img, #greenland-img {
+#rome-img, #kyoto-img, #qaqortoq-img, #puerto-escondido-img, #singapore-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-.rome, .hawaii, .qaqortoq {
+.rome-facts, .kyoto-facts, .qaqortoq-facts, .puerto-escondido-facts, .singapore-facts {
   display: none;
-}
-
-.rome-facts, .hawaii-facts, .qaqortoq-facts {
-  display: none;
+  margin-bottom: 100px;
 }
 
 #otherinput {
@@ -79,10 +77,6 @@ ul {
   max-width: 500px;
 }
 
-.qaqortoq h5, .hawaii h5, .rome h5 {
+.qaqortoq h5, .kyoto h5, .rome h5, .puerto-escondido h5, .singapore h5 {
   margin-bottom: 50px;
-}
-
-.qaqortoq-facts, .hawaii-facts, .rome-facts {
-  margin-bottom: 100px;
 }

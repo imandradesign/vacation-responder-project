@@ -7,6 +7,7 @@ $(document).ready(function() {
     var season = $("#season").val();
     var favoriteColor = $("#color").val();
     var drink = $("input:radio[name=drink]:checked").val();
+    var interest = $("input[type='checkbox']").val();
 
 
     $(".name").text(nameInput);
@@ -19,37 +20,53 @@ $(document).ready(function() {
     $("form").hide();
     $("#reload").show();
 
-    if (drink === 'mojito') {
-      $(".hawaii").show();
-    }
-
-    if (drink === "prosecco") {
+    if (season === "summer" && drink === "margarita") {
+      $(".puerto-escondido").show();
+    } else if (season === "winter" && drink === "coffeewhiskey" && interest === "hiking") {
+      $(".qaqortoq").show();
+    } else if (season === "spring" && interest === "sake") {
+      $(".kyoto").show();
+    } else if (drink === "prosecco" && interest === "reading") {
       $(".rome").show();
     }
-
-    if (drink === "coffeewhiskey") {
-      $(".qaqortoq").show();
-    }
   });
+
+  function letterCheck(inputtxt) {
+    var letterS = "s";
+    if (inputtxt.value.match(letterS)) {
+      $(".singapore").show();
+    }
+  }
 
   $(".click-rome").click(function() {
     $(".rome-facts").show();
   });
 
-  $(".click-hawaii").click(function() {
-    $(".hawaii-facts").show();
+  $(".click-kyoto").click(function() {
+    $(".kyoto-facts").show();
   });
 
   $(".click-qaqortoq").click(function() {
     $(".qaqortoq-facts").show();
   });
 
+  $(".click-puerto-escondido").click(function() {
+    $(".puerto-escondido-facts").show();
+  });
+
+  $(".click-singapore").click(function() {
+    $(".singapore-facts").show();
+  });
+
+
   $("#reload").click(function(event) {
     $("form").show();
     $("#reload").hide();
     $(".qaqortoq").hide();
-    $(".hawaii").hide();
+    $(".kyoto").hide();
     $(".rome").hide();
+    $(".puerto-escondido").hide();
+    $(".singapore").hide();
     event.preventDefault();
   });
 });
