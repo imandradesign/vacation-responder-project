@@ -1,9 +1,10 @@
 .jumbotron {
-  background-color: #8ac7c4;
+  background: url("../img/pattern.jpg") top center no-repeat;
+  text-align: center;
 }
 
 body {
-  background-color: #c3e2e1;
+  background-color: #F2D780;
 }
 
 label {
@@ -12,6 +13,10 @@ label {
 
 p {
   font-size: 18px;
+}
+
+input, select {
+  background-color: #F3FFCF !important;
 }
 
 #page-title {
@@ -26,10 +31,6 @@ p {
 
 .form-group {
   padding-bottom: 20px;
-}
-
-.form-control {
-  background-color: #E2FEF9;
 }
 
 .kyoto, .rome, .qaqortoq, .puerto-escondido, .singapore {
@@ -59,7 +60,7 @@ ul {
 #reload {
   display: block;
   margin: 0 auto;
-  background-color: #8ac7c4;
+  background-color: #EB9C4D;
   color: black;
   font-style: italic;
   font-size: 20px;
@@ -67,7 +68,7 @@ ul {
 }
 
 #submit {
-  background-color: #EA7434;
+  background-color: #EB9C4D;
   font-size: 24px;
   margin-bottom: 100px;
 }
