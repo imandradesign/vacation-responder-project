@@ -5,32 +5,31 @@ $(document).ready(function() {
     var nameInput = $("input#name").val().charAt(0).toUpperCase() + $("input#name").val().slice(1);;
     var cityInput = $("input#city").val().charAt(0).toUpperCase() + $("input#city").val().slice(1);
     var stateInput = $("input#state").val().toUpperCase();
-    var season = $("#season").val();
+    var season = parseInt($("#season").val());
     var favoriteColor = $("#color").val();
-    var drink = $("input:radio[name=drink]:checked").val();
-    var hairColor = $("input:radio[name=hair]:checked").val();
+    var drink = parseInt($("input:radio[name=drink]:checked").val());
+    var hairColor = parseInt($("input:radio[name=hair]:checked").val());
     var allEntries = [nameInput, cityInput, stateInput, season, drink, hairColor];
 
     $(".name").text(nameInput);
     $(".city").text(cityInput);
     $(".state").text(stateInput);
 
+    if (season + drink + hairColor >= 12){
+      $(".puerto-escondido").show();
+    } else if (season + drink + hairColor >= 9){
+      $(".rome").show();
+    } else if (season + drink + hairColor >= 6){
+      $(".kyoto").show();
+    } else if (season + drink + hairColor >= 3){
+      $(".qaqortoq").show();
+    }
+
     event.preventDefault();
 
     $("form").hide();
     $("#reload").show();
 
-    function letterCount(entry, character) {
-      var count = 0;
-      for (i = 0; i < nameInput.length; i++) {
-        if (nameInput[i] == character) {
-          count++
-        }
-      }
-      alert("The letter ''" + character + "'' occurred " + count + " times.")
-    }
-
-    letterCount(nameInput, "o")
 
     $(".click-rome").click(function() {
       $(".rome-facts").show();
