@@ -1,6 +1,6 @@
 # Imandra's Vacation Responder Project
 
-##### _This is my second coding project with Epicodus with a form to fill out and get vacation suggestion results in return. Latest version: February 2019._
+##### _This is my second coding project with Epicodus with a form that returns different vacation suggestion results upon submission based on the fields entered. Latest version: March 2019._
 
 #### By _**Imandra McKenzie**_
 
