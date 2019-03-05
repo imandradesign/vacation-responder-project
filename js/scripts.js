@@ -29,27 +29,22 @@ $(document).ready(function() {
 
     $("form").hide();
     $("#reload").show();
+  });
 
+  $(".click-rome").click(function() {
+    $(".rome-facts").toggle();
+  });
 
-    $(".click-rome").click(function() {
-      $(".rome-facts").show();
-    });
+  $(".click-kyoto").click(function() {
+    $(".kyoto-facts").toggle();
+  });
 
-    $(".click-kyoto").click(function() {
-      $(".kyoto-facts").show();
-    });
+  $(".click-qaqortoq").click(function() {
+    $(".qaqortoq-facts").toggle();
+  });
 
-    $(".click-qaqortoq").click(function() {
-      $(".qaqortoq-facts").show();
-    });
-
-    $(".click-puerto-escondido").click(function() {
-      $(".puerto-escondido-facts").show();
-    });
-
-    $(".click-singapore").click(function() {
-      $(".singapore-facts").show();
-    });
+  $(".click-puerto-escondido").click(function() {
+    $(".puerto-escondido-facts").toggle();
   });
 
 
@@ -60,7 +55,6 @@ $(document).ready(function() {
     $(".kyoto").hide();
     $(".rome").hide();
     $(".puerto-escondido").hide();
-    $(".singapore").hide();
     event.preventDefault();
   });
 });
